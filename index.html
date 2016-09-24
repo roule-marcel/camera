@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="cam.js"></script>
+    </head>
+
+    <body>
+        <video id="localVideo" autoplay muted style="width:40%;"></video>
+        <video id="remoteVideo" autoplay style="width:40%;"></video>
+
+        <br />
+
+        <input type="button" id="start" onclick="start(true)" value="Start Video"></input>
+
+        <script type="text/javascript">
+            pageReady();
+
+			var localVideo;
+			var remoteVideo;
+			var peerConnection;
+			var peerConnectionConfig = {'iceServers': [{'url': 'stun:stun.services.mozilla.com'}, {'url': 'stun:stun.l.google.com:19302'}]};
+
+			
+        </script>
+    </body>
+</html>
