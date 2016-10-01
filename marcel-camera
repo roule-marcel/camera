@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd `dirname $0`/src
+echo "Open a web browser and go to http://<your_marcel_ip>:10000"
+python -m SimpleHTTPServer 10000
+nodejs server.js
